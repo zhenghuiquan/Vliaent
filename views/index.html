@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+  </head>
+  <body>
+    <button class="btn">点击</button>
+  </body>
+</html>
+<script src="lis/router.js"></script>
+<script>
+  // 使用方法
+  /*
+    router.post('接口',对象(传递参数),对象(请求头),布尔(同步、异步))
+    .then(res =>{
+      请求成功后的回调函数
+    })
+  */
+  console.log(V)
+  route
+    .post(
+      "getstatus",
+      {
+        id: "1",
+        mess: "你好"
+      },
+      { "Content-type": "appliction/x-www-form/urlencoded" },
+      true
+    )
+    .then(res => {
+      console.log(res)
+    })
+</script>
